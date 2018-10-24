@@ -17,19 +17,19 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "PhD in Quantitative Methods"
+  institution = "UT-AUstin"
+  year = 2019 (expected)
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
+  course = "MEd in Quantitative Methods"
+  institution = "UT-Austin"
+  year = 2015
+
+[[education.courses]]
+  course = "BS in Psychology"
+  institution = "UT-Austin"
   year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
  
 +++
 
