@@ -10,9 +10,11 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
+    "Bayesian Statistics",
     "Machine Learning",
-    "Time Series",
-    "Bayesian Statistics"
+    "Item Response Theory",
+    "Time Series Analysis",
+    "Data Visualization"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -35,6 +37,6 @@ weight = 5
 
 # Biography
 
-Rich Nieto is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I'm a PhD student in the College of Education's Quantitative Methods program. My studies focus on developing and evaluating statistical and pyschometric research methods in the social sciences. I'm an aspiring data scientist, and love learning about new methods by stumbling my way through R and Python until I get it. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+
