@@ -37,6 +37,6 @@ weight = 5
 
 # Biography
 
-I'm a PhD student in the College of Education's Quantitative Methods program. My studies focus on developing and evaluating statistical and pyschometric research methods in the social sciences. I'm an aspiring data scientist, and love learning about new methods by stumbling my way through R and Python until I get it. 
+I'm a PhD student in the College of Education's Quantitative Methods program. My studies focus on developing and evaluating statistical and pyschometric research methods in the social sciences. I'm an aspiring data scientist, and love learning about new methods by stumbling my way through R and Python until I think I've got it. 
 
 
