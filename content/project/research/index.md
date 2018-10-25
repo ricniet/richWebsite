@@ -39,7 +39,7 @@ The HRM framework was developed as a way to simultaneously describe individual r
 
 The HRM is a latent variable model composed of two separate modeling stages, which highlight the *hierarchical* structure of the rating process. The first stage is a signal detection model for observed ratings $x$ that produces as its output a measure of rater severity/leniency error, rater variability, as well as an ideal score $\xi$ (the score the individual would have received from a perfect rater with no bias). The second stage is an item response theory (IRT) model, which takes these ideal ratings (corrected for rater effects), and produces estimates of the latent trait of interest $\theta$ (e.g., depression, writing procifiency). 
 
-Extensions of this basic model have been made to accomodate multidimensional structure in rating instruments, time series and longitudinal ratings, and inclusion of covariates of the rating process. 
+Extensions of this basic model have been made to accommodate multidimensional structure in rating instruments, time series and longitudinal ratings, and inclusion of covariates of the rating process. 
 
 If you're interested in more on the mechanics of the HRM, stay tuned for upcoming tutorials. 
 
