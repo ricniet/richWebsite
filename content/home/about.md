@@ -20,17 +20,17 @@ weight = 5
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "PhD in Quantitative Methods"
-  institution = "UT-AUstin"
+  institution = "The University of Texas at Austin"
   year = 2019
 
 [[education.courses]]
   course = "MEd in Quantitative Methods"
-  institution = "UT-Austin"
+  institution = "The University of Texas at Austin"
   year = 2015
 
 [[education.courses]]
   course = "BS in Psychology"
-  institution = "UT-Austin"
+  institution = "The University of Texas at Austin"
   year = 2009
  
 +++
