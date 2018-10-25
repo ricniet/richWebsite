@@ -143,15 +143,6 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/demo/</loc>
       <lastmod>2016-04-27T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -170,7 +161,25 @@
     
     <url>
     
+      <loc>/tags/measurement/</loc>
+      <lastmod>2016-04-27T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/project/</loc>
+      <lastmod>2016-04-27T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/psychometrics/</loc>
       <lastmod>2016-04-27T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -181,6 +190,15 @@
     
       <loc>/publication_types/</loc>
       <lastmod>2013-07-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/research/</loc>
+      <lastmod>2016-04-27T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     

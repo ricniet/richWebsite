@@ -84,12 +84,18 @@
     </item>
     
     <item>
-      <title>Internal Project</title>
+      <title>Research</title>
       <link>/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Ratings. $\theta$&lt;/p&gt;
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve spent the better part of the last four years developing extensions to the hierarchical rater model (HRM), a latent variable modeling framework for the analysis of ratings data. In conjunction with Drs. Jodi Casiabianca (Educational Testing Services, previously UT-Austin) and Brian Junker (Carnegie Mellon), this work has focused on developing theory, generating code for fitting Bayesian models, empirically testing these methods via Monte Carlo simulations, and disseminating the work through research articles and conference workshops. Keep reading to learn more about the HRM, and the specific work I&amp;rsquo;m completing as part of my dissertation.&lt;/p&gt;
+
+&lt;h2 id=&#34;hierarchical-rater-models&#34;&gt;Hierarchical Rater Models&lt;/h2&gt;
 </description>
     </item>
     
