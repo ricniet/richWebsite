@@ -28,7 +28,7 @@ external_link = ""
 
 ## Overview
 
-I've spent the better part of the last four years developing extensions to the hierarchical rater model (HRM), a latent variable modeling framework for the analysis of ratings data. In conjunction with Drs. Jodi Casiabianca (Educational Testing Services, previously UT-Austin) and Brian Junker (Carnegie Mellon), this work has focused on developing theory, generating code for fitting Bayesian models, empirically testing these methods via Monte Carlo simulations, and disseminating the work through research articles and conference workshops. Keep reading to learn a bit more about the HRM, and the work I'm completing as part of my dissertation.
+I've spent the better part of the last four years developing extensions to the hierarchical rater model (HRM), a latent variable modeling framework for the analysis of ratings data. In conjunction with Drs. Jodi Casabianca (Educational Testing Services, previously UT-Austin) and Brian Junker (Carnegie Mellon), this work has focused on developing theory, generating code for fitting Bayesian models, empirically testing these methods via Monte Carlo simulations, and disseminating the work through research articles and conference workshops. Keep reading to learn a bit more about the HRM, and the work I'm completing as part of my dissertation.
 
 ## Hierarchical Rater Models
 
