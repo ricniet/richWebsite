@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/i-love-creech/</loc>
+      <lastmod>2018-10-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00-05:00</lastmod>
     </url>
@@ -197,6 +205,15 @@
     
       <loc>/tags/</loc>
       <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/random/</loc>
+      <lastmod>2018-10-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
