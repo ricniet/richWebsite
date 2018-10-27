@@ -28,7 +28,7 @@ external_link = ""
 
 ## Overview
 
-I've spent the better part of the last four years developing extensions to the hierarchical rater model (HRM), a latent variable modeling framework for the analysis of ratings data. In conjunction with Drs. Jodi Casabianca (Educational Testing Services, previously UT-Austin) and Brian Junker (Carnegie Mellon), this work has focused on developing theory, generating code for fitting Bayesian models, empirically testing these methods via Monte Carlo simulations, and disseminating the work through research articles and conference workshops. Keep reading to learn a bit more about the HRM, and the work I'm completing as part of my dissertation.
+I've spent the better part of the last four years developing extensions to the [hierarchical rater model](/files/baseHRM.pdf) (HRM), a latent variable modeling framework for the analysis of ratings data. In conjunction with Drs. Jodi Casabianca (Educational Testing Services, previously UT-Austin) and Brian Junker (Carnegie Mellon), this work has focused on developing theory, generating code for fitting Bayesian models, empirically testing these methods via Monte Carlo simulations, and disseminating the work through research articles and conference workshops. Keep reading to learn a bit more about the HRM, and the work I'm completing as part of my dissertation.
 
 ## Hierarchical Rater Models
 
@@ -40,7 +40,7 @@ The HRM framework was developed as a way to simultaneously describe individual r
 
 The HRM is a latent variable model composed of two separate modeling stages, which highlight the *hierarchical* structure of the rating process. The first stage is a signal detection model for observed ratings $x$ that produces as its output a measure of rater severity/leniency error, rater variability, as well as an ideal score $\xi$ (the score the individual would have received from a perfect rater with no bias). The second stage is an item response theory (IRT) model, which takes these ideal ratings (corrected for rater effects), and produces estimates of the latent trait of interest $\theta$ (e.g., depression, writing procifiency). 
 
-Extensions of this basic model have been made to accommodate multidimensional structure in rating instruments, time series and longitudinal ratings, and inclusion of covariates of the rating process. 
+Extensions of this basic model have been made to accommodate multidimensional structure in rating instruments, [longitudinal ratings](/files/longitudinalHRM.pdf), and inclusion of [covariates of the rating process](/files/covariateHRM.pdf). 
 
 ## My Research
 
