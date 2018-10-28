@@ -18,9 +18,21 @@
       <guid>/tutorial/example/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models, and understanding/resolving identification constraints has to be one of the most frustrating stages in the workflow.&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;To start off, we&amp;rsquo;ll focus on the simple, but oh so elegant, Rasch model:&lt;/p&gt;
 
 &lt;p&gt;$$\text{logit}\big{p\big(Y&lt;em&gt;{ij} = 1 | \theta&lt;/em&gt;{i},\beta_{j}\big)\big} = $$&lt;/p&gt;
+=======
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+>>>>>>> parent of 20231d6... Changed tutorial page
 </description>
     </item>
     
