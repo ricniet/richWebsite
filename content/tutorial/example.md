@@ -4,7 +4,7 @@ title = "Gaining Intuition for Identification Constraints in Bayesian IRT Models
 date = 2018-09-09T00:00:00
 # lastmod = 2018-09-09T00:00:00
 
-draft = false  # Is this a draft? true/false
+draft = true  # Is this a draft? true/false
 toc = true  # Show table of contents? true/false
 type = "docs"  # Do not modify.
 
@@ -21,4 +21,8 @@ linktitle = ""
 # caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 +++
 
-Coming soon.
+I've spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models; understanding/resolving identification constraints has to be one of the most frustrating stages in the workflow.
+
+We'll start off with the simple Rasch model:
+
+$$ \theta $$

@@ -18,7 +18,9 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0500</pubDate>
       
       <guid>/tutorial/example/</guid>
-      <description>Coming soon.</description>
+      <description>I&amp;rsquo;ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models; understanding/resolving identification constraints has to be one of the most frustrating stages in the workflow.
+We&amp;rsquo;ll start off with the simple Rasch model:
+$$ \theta $$</description>
     </item>
     
   </channel>
