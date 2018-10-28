@@ -1,5 +1,5 @@
 +++
-title = "Example Page"
+title = "Gaining Intuition for Identification Constraints in Bayesian IRT Models: Part I"
 
 date = 2018-09-09T00:00:00
 # lastmod = 2018-09-09T00:00:00
@@ -9,9 +9,9 @@ toc = true  # Show table of contents? true/false
 type = "docs"  # Do not modify.
 
 # Add menu entry to sidebar.
-linktitle = "Example Page"
+linktitle = ""
 [menu.tutorial]
-  parent = "Example Topic"
+  parent = "IRT"
   weight = 1
 
 # Featured image.
@@ -21,12 +21,4 @@ linktitle = "Example Page"
 # caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 +++
 
-In this tutorial, I'll share my top 10 tips for getting started with Academic:
-
-## Tip 1
-
-...
-
-## Tip 2
-
-...
+Coming soon.
