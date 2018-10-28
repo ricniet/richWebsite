@@ -11,16 +11,9 @@ type = "docs"  # Do not modify.
 # Add menu entry to sidebar.
 linktitle = "Example Page"
 [menu.tutorial]
-  parent = "Example Topic"
+  parent = "IRT"
   weight = 1
 +++
 
-In this tutorial, I'll share my top 10 tips for getting started with Academic:
-
-## Tip 1
-
-...
-
-## Tip 2
-
-...
+# Understanding Identification Constraints for Bayesian IRT Models
+## Tutorial Using JAGS
