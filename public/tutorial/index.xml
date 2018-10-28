@@ -13,12 +13,23 @@
     
     
     <item>
-      <title>Gaining Intuition for Identification Constraints in IRT Models</title>
+      <title>Gaining Intuition for Identification Constraints in Bayesian IRT Models</title>
       <link>/tutorial/example/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0500</pubDate>
       
       <guid>/tutorial/example/</guid>
-      <description> Coming soon. </description>
+      <description>I&amp;rsquo;ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models, and understanding/resolving identification constraints has to be one of the most frustrating stages in the workflow.
+To start off, we&amp;rsquo;ll focus on the simple, but oh so elegant, Rasch model:
+$$\text{logit}\big{p\big(Y{ij} = 1 | \theta{i},\beta_{j}\big)\big} = $$</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/tutorial/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/example/</guid>
+      <description>code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs) { hljs.configure({languages: []}); hljs.initHighlightingOnLoad(); if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); } }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
     </item>
     
   </channel>
