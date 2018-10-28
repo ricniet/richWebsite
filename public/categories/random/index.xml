@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>random on I think I&#39;ve got it...</title>
+    <link>/categories/random/</link>
+    <description>Recent content in random on I think I&#39;ve got it...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 25 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/random/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I love creech!</title>
+      <link>/post/i-love-creech/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/i-love-creech/</guid>
+      <description>I want the world to know!!!</description>
+    </item>
+    
+  </channel>
+</rss>
