@@ -12,5 +12,14 @@
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Gaining Intuition for Idenitification Constraints in Bayesian IRT Models: Part I</title>
+      <link>/post/gaining-intuition-for-idenitification-constraints-in-bayesian-irt-models-part-i/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/gaining-intuition-for-idenitification-constraints-in-bayesian-irt-models-part-i/</guid>
+      <description>I’ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models. Understanding (let alone resolving) identification constraints has to be one of the most frustrating stages in the workflow. I think this is largely because constraints are already configured in the software we use to implement IRT analyses, so there’s just little reason to know the details! But for those of you who’ve fit latent variable models as Bayesian hierarchical models, you’ll know that understanding why such constraints are necessary, what options are available for model identification, and what their implications are for parameter interpretation can be really confusing.</description>
+    </item>
+    
   </channel>
 </rss>

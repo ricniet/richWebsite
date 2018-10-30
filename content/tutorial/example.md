@@ -21,8 +21,10 @@ linktitle = ""
 # caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 +++
 
-I've spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models; understanding/resolving identification constraints has to be one of the most frustrating stages in the workflow.
+I've spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models. Understanding (let alone resolving) identification constraints has to be one of the most frustrating stages in the workflow. I think this is largely because constraints are already configured in the software we use to implement these models, so there's just little reason to know the details! For those of us who work within a Bayesian framework, however, when it comes time to identify our model, it's an inevitable trip to Google, and/or trial-and-error until we *hope* that our solutions worked. 
 
-We'll start off with the simple Rasch model: 
+We'll start off with a simple Rasch model: 
 
-$$ \theta $$
+$$ \text{logit}\Big(p\big(y_{ij} = 1 \big)\Big) = \theta_i - \beta_j, $$
+
+which specifies the log-odds of a correct response for individual $i$ to binary item $j$ as the difference between their latent trait $\theta_i$ and the difficulty of the item $\beta_j$. 

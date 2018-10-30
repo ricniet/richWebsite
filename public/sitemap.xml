@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/gaining-intuition-for-idenitification-constraints-in-bayesian-irt-models-part-i/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00-05:00</lastmod>
     </url>
@@ -102,6 +110,15 @@
     
     <url>
     
+      <loc>/tags/bayesian/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/</loc>
       <priority>0</priority>
     </url>
@@ -112,6 +129,33 @@
     
       <loc>/</loc>
       <lastmod>2016-04-20T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/irt/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/irt/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/jags/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -155,6 +199,15 @@
     
     <url>
     
+      <loc>/tags/r/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/research/</loc>
       <lastmod>2016-04-27T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -180,7 +233,25 @@
     <url>
     
       <loc>/tags/</loc>
-      <lastmod>2016-04-27T00:00:00-05:00</lastmod>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tutorials/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/tutorials/</loc>
+      <lastmod>2018-10-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

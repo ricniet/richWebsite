@@ -18,9 +18,7 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0500</pubDate>
       
       <guid>/tutorial/example/</guid>
-      <description>I&amp;rsquo;ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models; understanding/resolving identification constraints has to be one of the most frustrating stages in the workflow.
-We&amp;rsquo;ll start off with the simple Rasch model:
-$$ \theta $$</description>
+      <description>I&amp;rsquo;ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models. Understanding (let alone resolving) identification constraints has to be one of the most frustrating stages in the workflow. I think this is largely because constraints are already configured in the software we use to implement these models, so there&amp;rsquo;s just little reason to know the details! For those of us who work within a Bayesian framework, however, when it comes time to identify our model, it&amp;rsquo;s an inevitable trip to Google, and/or trial-and-error until we hope that our solutions worked.</description>
     </item>
     
   </channel>
