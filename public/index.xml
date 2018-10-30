@@ -12,61 +12,6 @@
     
     <item>
       <title>Gaining Intuition for Idenitification Constraints in Bayesian IRT Models: Part I</title>
-      <link>/post/gaining-intuition-for-idenitification-constraints-in-bayesian-irt-models-part-i/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/gaining-intuition-for-idenitification-constraints-in-bayesian-irt-models-part-i/</guid>
-      <description>&lt;p&gt;I’ve spent considerable time developing JAGS/Stan code for fitting Bayesian IRT models. Understanding (let alone resolving) identification constraints has to be one of the most frustrating stages in the workflow. I think this is largely because constraints are already configured in the software we use to implement IRT analyses, so there’s just little reason to know the details! But for those of you who’ve fit latent variable models as Bayesian hierarchical models, you’ll know that understanding &lt;em&gt;why&lt;/em&gt; such constraints are necessary, &lt;em&gt;what&lt;/em&gt; options are available for model identification, and &lt;em&gt;what&lt;/em&gt; their implications are for parameter interpretation can be really confusing.&lt;/p&gt;
-&lt;p&gt;Even if you haven’t had to manually identify an IRT model before, it’s worth gaining intuition for it for at least 3 reasons:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;It’s good to understand the defaults that a particular software/package provides, especially when making comparisons;&lt;/li&gt;
-&lt;li&gt;It’s really helpful (and more important!) when you move to more complex models, such as explanatory or multidimensional IRT models;&lt;/li&gt;
-&lt;li&gt;Latent variable models are inherently ambiguous, and identifying the metric on which parameters lie is a great exercise in becoming more comfortable with them.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In the first of (at least) two posts, I’m going to cover identification for a few of the more common IRT models. I’ll touch on constraints conceptually, but the real goal is to &lt;em&gt;show&lt;/em&gt; you different ways of identifying IRT models in JAGS. I’ll focus on a few things with each example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Why constraints are necessary&lt;/li&gt;
-&lt;li&gt;Different options for setting constraints&lt;/li&gt;
-&lt;li&gt;Why we might (not) want to use a given set of constraints&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Before diving in, it’s important to stress that &lt;strong&gt;identification is a property of the likelihood model&lt;/strong&gt;, and thus, despite this post focusing on a Bayesian approach, it applies to frequentist methods as well.&lt;/p&gt;
-&lt;div id=&#34;irt-models-for-binary-responses&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;IRT Models for Binary Responses&lt;/h2&gt;
-&lt;div id=&#34;i.-rasch-model&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;I. Rasch Model&lt;/h3&gt;
-&lt;p&gt;Let’s start with the simplest of IRT models. Letting &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; index individuals, and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; index items, the Rasch model specifies the log-odds of a correct respone as the difference between an individual’s latent trait &lt;span class=&#34;math inline&#34;&gt;\(\theta_i\)&lt;/span&gt; and item’s difficulty &lt;span class=&#34;math inline&#34;&gt;\(\beta_j\)&lt;/span&gt;. Let’s denote this difference &lt;span class=&#34;math inline&#34;&gt;\(\eta_{ij}\)&lt;/span&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \text{logit}\big\{p\big(y_{ij} = 1 | \Theta\big)\big\} = \theta_i - \beta_j = \eta_{ij}.\]&lt;/span&gt;&lt;/p&gt;
-&lt;div id=&#34;is-this-model-identified&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Is this model identified?&lt;/h4&gt;
-&lt;p&gt;The answer, of course, is no. The issue here is one that plagues all latent variable models—there is no inherent metric when we’re measuring unobserved variables, and so identifying a unique solution (i.e., obtaining parameter estimates) is impossible without first imposing a scale via constraints.&lt;/p&gt;
-&lt;p&gt;The real issue is that predictions from this model (e.g., logits, probability) depend on the &lt;em&gt;relative&lt;/em&gt; positions of the parameters. The issue is made evident when we consider the difference &lt;span class=&#34;math inline&#34;&gt;\(\eta_{ij}\)&lt;/span&gt;. Note that an endless number of solutions for &lt;span class=&#34;math inline&#34;&gt;\(\theta_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_j\)&lt;/span&gt; result in the same &lt;span class=&#34;math inline&#34;&gt;\(\eta_{ij}\)&lt;/span&gt; (and by extension, likelihood). In the literature, this is often referred to as &lt;em&gt;additive&lt;/em&gt; aliasing—adding the same constant to both &lt;span class=&#34;math inline&#34;&gt;\(\theta_i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_j\)&lt;/span&gt; results in the same likelihood.&lt;/p&gt;
-&lt;p&gt;To make this really clear, suppose the “true” value of &lt;span class=&#34;math inline&#34;&gt;\(\eta_{11}\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(2\)&lt;/span&gt;. Well, setting &lt;span class=&#34;math inline&#34;&gt;\(\theta_1 = 3\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_1 = 1\)&lt;/span&gt; results in &lt;span class=&#34;math inline&#34;&gt;\(\eta_{11}=3 - 1 =2\)&lt;/span&gt;. But setting &lt;span class=&#34;math inline&#34;&gt;\(\theta_1=102\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\beta_1=100\)&lt;/span&gt; also leads to &lt;span class=&#34;math inline&#34;&gt;\(\eta_{11} = 102-100=2\)&lt;/span&gt;. And for that matter, &lt;span class=&#34;math inline&#34;&gt;\(\eta_{11} = -3 - -5 = 2\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\eta_{11} = 2.3 - 0.3 = 2\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\eta_{11} = 3,222 - 3,000 = 2\)&lt;/span&gt;, and on we go on an endless quest to find a unique solution to an impossible mathematical problem.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;how-do-we-identify-this-model&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;How do we identify this model?&lt;/h4&gt;
-&lt;p&gt;Because we’re interested in the &lt;em&gt;relative&lt;/em&gt; difference between the latent trait and item difficulty, what we need is an anchoring point that will impose a metric and allow a unique solution to be found. There are &lt;em&gt;many&lt;/em&gt; options for constraining the model, but I’ll focus on those most common in the psychometric literature:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Constraining the mean and variance of the latent trait distribution, such that &lt;span class=&#34;math inline&#34;&gt;\(\theta_i \sim \mathcal{N}\big(0, 1\big)\)&lt;/span&gt; for all &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Constraining the mean of the item difficulties&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ii.-two-parameter-logistic-2pl-model&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;II. Two-Parameter Logistic (2PL) Model&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \text{logit}\big\{p\big(y_{ij} = 1 | \Theta\big)\big\} = \alpha_j\big(\theta_i - \beta_j\big) = \eta_{ij}.\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;irt-models-for-multinomialordinal-responses&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;IRT Models for Multinomial/Ordinal Responses&lt;/h2&gt;
-&lt;div id=&#34;graded-response-model&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Graded Response Model&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Gaining Intuition for Idenitification Constraints in Bayesian IRT Models: Part I</title>
       <link>/post/temp/gaining-intuition-for-idenitification-constraints-in-bayesian-irt-models-part-i/</link>
       <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
       
