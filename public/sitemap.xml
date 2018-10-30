@@ -136,7 +136,7 @@
     
     <url>
     
-      <loc>/tags/irt/</loc>
+      <loc>/categories/irt/</loc>
       <lastmod>2018-10-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -145,7 +145,7 @@
     
     <url>
     
-      <loc>/categories/irt/</loc>
+      <loc>/tags/irt/</loc>
       <lastmod>2018-10-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -241,7 +241,7 @@
     
     <url>
     
-      <loc>/tags/tutorials/</loc>
+      <loc>/categories/tutorials/</loc>
       <lastmod>2018-10-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -250,7 +250,7 @@
     
     <url>
     
-      <loc>/categories/tutorials/</loc>
+      <loc>/tags/tutorials/</loc>
       <lastmod>2018-10-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
