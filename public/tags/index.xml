@@ -7,37 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 28 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bayesian</title>
-      <link>/tags/bayesian/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/bayesian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IRT</title>
-      <link>/tags/irt/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/irt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JAGS</title>
-      <link>/tags/jags/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/jags/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Measurement</title>
@@ -58,29 +31,11 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Research</title>
       <link>/tags/research/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>/tags/tutorials/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tutorials/</guid>
       <description></description>
     </item>
     
